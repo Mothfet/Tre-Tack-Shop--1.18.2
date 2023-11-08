@@ -1,13 +1,13 @@
 package com.kyraltre.tretackshop.registry;
 
 
-import com.alaharranhonor.swem.forge.SWEM;
 import com.alaharranhonor.swem.forge.items.tack.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.alaharranhonor.swem.forge.items.SWEMHorseArmorItem;
+import com.kyraltre.tretackshop.item.DyeablePastureBlanketItem;
 import com.kyraltre.tretackshop.item.TackShopCreativeModTab;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -48,6 +48,8 @@ public class TackShopItems {
     public static final RegistryObject<Item> TROPHY_1;
     public static final RegistryObject<Item> TROPHY_2;
     public static final RegistryObject<Item> TROPHY_3;
+
+    public static final RegistryObject<Item> PASTURE_BLANKET_DYEABLE;
 
 
     public TackShopItems() {
@@ -98,6 +100,13 @@ public class TackShopItems {
         PASTURE_BLANKET_RAINBOW_ARMORED = ITEMS.register("pasture_blanket_rainbow_armored",
                 () -> new PastureBlanketItem(SWEMHorseArmorItem.HorseArmorTier.DIAMOND, 37,
                         "pasture_blanket_rainbow_armored", (new Item.Properties())
+                        .tab(TackShopCreativeModTab.TRETACK_TAB).stacksTo(16)));
+
+        // Dyeable Tack
+
+        PASTURE_BLANKET_DYEABLE = ITEMS.register("halter_dyeable",
+                () -> new DyeablePastureBlanketItem(SWEMHorseArmorItem.HorseArmorTier.NONE, 0,
+                        "pasture_blanket_dyeable", new Item.Properties()
                         .tab(TackShopCreativeModTab.TRETACK_TAB).stacksTo(16)));
 
 
