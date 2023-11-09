@@ -104,7 +104,7 @@ public class TackShopItems {
 
         // Dyeable Tack
 
-        PASTURE_BLANKET_DYEABLE = ITEMS.register("halter_dyeable",
+        PASTURE_BLANKET_DYEABLE = ITEMS.register("pasture_blanket_dyeable",
                 () -> new DyeablePastureBlanketItem(SWEMHorseArmorItem.HorseArmorTier.NONE, 0,
                         "pasture_blanket_dyeable", new Item.Properties()
                         .tab(TackShopCreativeModTab.TRETACK_TAB).stacksTo(16)));

@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tretackshop:items/pasture_blanket/pasture_blanket_dyeable",
-    "layer1": "tretackshop:items/pasture_blanket/pasture_blanket_dyeable_details"
+    "layer0": "tretackshop:items/pasture_blanket/pasture_blanket_dyeable_icon"
   }
 }
