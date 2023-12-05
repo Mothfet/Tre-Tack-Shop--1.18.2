@@ -55,7 +55,7 @@ public class TackShopItems {
     public static void init(IEventBus eventBus) { ITEMS.register(eventBus); }
 
     static {
-        ITEMS = DeferredRegister.create(Keys.ITEMS, "tretackshop");
+        ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "tretackshop");
 
         BUTTERFLY = ITEMS.register("butterfly",
                 () -> new Item(new Item.Properties().tab(TackShopCreativeModTab.TRETACK_TAB)));
